@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Smooch+Sans:wght@500&family=Titillium+Web&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+nav {
+  background: #3498db;
+  width: 100%;
+  height: 80px;
+ 
+}
+
+.logo p {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 40px;
+  font-family: "Smooch Sans", sans-serif;
+  color: white;
+}
+
+.logo p span {
+  font-family: "Poppins", sans-serif;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+section .latest-mcqs{
+    border: #3498db solid 2px;
+    height: 100%;
+    margin-right: 50px;
+    padding: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    border-top-right-radius: 10px;
+}
+
+section .latest-mcqs h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section .side-bar{
+    border: #3498db solid 2px;
+    margin-right: 50px;
+    padding: 30px;
+    width: 300px;
+    height: 100%;
+    border-top-left-radius: 10px;
+}
+
+section .side-bar h3{
+    background: #3498db;
+    padding: 10px 10px;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    border: #3498db 0 solid;
+    border-top-left-radius: 10px;
+    
+}
+
+section .side-bar ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+section .side-bar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+section .latest-mcqs .pageDock ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .latest-mcqs .pageDock ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+section .latest-mcqs .pageDock ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    border: #3498db 2px solid;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    padding: 10px;
+}
+
+section .latest-mcqs .pageDock ul li.pageNumber:hover a, ul li.pageNumber.active a{
+    color: white;
+    background-color: #3498db;
+    border-radius: 0;
+    transition: .5s;
+}
+
+@media (max-width: 600px){
+
+
+    section{
+        display: block;
+        margin: 0;
+    }
+    
+    section .latest-mcqs{
+        width: 90%;
+        overflow: hidden;
+        margin: 30px;
+
+    }
+
+    section .side-bar{
+        width: 70%;
+        overflow: hidden;
+        margin: 30px;
+    }
+
+}
+
+@media (max-width: 414px){
+
+
+    section{
+        display: block;
+        margin: 0;
+
+    }
+    
+    section .latest-mcqs{
+        width: 85%;
+        overflow: hidden;
+        margin: 30px;
+ 
+
+    }
+
+    section .side-bar{
+        width: 85%;
+        margin: 30px;
+
+    }
+
+}
